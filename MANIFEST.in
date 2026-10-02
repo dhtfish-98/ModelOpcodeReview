@@ -1,0 +1,14 @@
+include README.md ORIGIN.md DEFENSIVE_SCOPE.md VALIDATION.md SOURCE_AUDIT.json requirements-dev.txt
+recursive-include THIRD_PARTY_LICENSES *.txt
+recursive-include src *.py py.typed
+recursive-include tests *.py
+recursive-include scripts *.py
+recursive-include examples *.pkl *.npy *.zip
+include .github/workflows/ci.yml
+prune .upstream-local
+prune validation-local
+prune .venv
+prune .install-check
+prune .install-final
+prune wheelhouse
+global-exclude __pycache__ *.py[cod]

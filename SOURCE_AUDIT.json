@@ -1,0 +1,104 @@
+{
+  "upstream": "mmaitre314/picklescan",
+  "commit": "5e7ab22cb5bc59c4276820df5153829db4c751e8",
+  "source_acquisition": "Frozen local source supplemented by detached git checkout at the exact same commit for tests and README; no upstream code/tests executed.",
+  "coverage": "Full 725-line scanner, 125-line CLI, 96-line relaxed ZIP, 84-line torch helper, entry files, metadata/dependency lists, complete MIT and original notices, full 1042-line scanner tests, README and test workflow read.",
+  "selected_files": [
+    {
+      "path": "src/picklescan/scanner.py",
+      "bytes": 29183,
+      "sha256": "1368076e9490cd87a3a5d5386fabc836197035e6bd0693ba6ffbf896027bb02f",
+      "review": "full selected file"
+    },
+    {
+      "path": "src/picklescan/cli.py",
+      "bytes": 4317,
+      "sha256": "587f0eab615ddaecc1288474ddd42fa8506c87448e3cbc1589ee9d94f35086d5",
+      "review": "full selected file"
+    },
+    {
+      "path": "src/picklescan/relaxed_zipfile.py",
+      "bytes": 3582,
+      "sha256": "ab37d06e58afe531401f0bd366a8868750a4147c69b8bb25c21e55752d4dacf4",
+      "review": "full selected file"
+    },
+    {
+      "path": "src/picklescan/torch.py",
+      "bytes": 2687,
+      "sha256": "35b082ce4b3568769c6f1c1b138eb84598f717e0b5c342046a2fa0ffe0cdf015",
+      "review": "full selected file"
+    },
+    {
+      "path": "src/picklescan/__init__.py",
+      "bytes": 82,
+      "sha256": "01b2ed5cf6896532115dcb7d20c12234a8e1bfe9ce9421c5a3f69e287397cdfc",
+      "review": "full selected file"
+    },
+    {
+      "path": "src/picklescan/__main__.py",
+      "bytes": 30,
+      "sha256": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+      "review": "full selected file"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1072,
+      "sha256": "1418146b5f7b837d0a7c24906a272f2f6adb68ebb258e97560ec91ae663ff38a",
+      "review": "full selected file"
+    },
+    {
+      "path": "NOTICE.txt",
+      "bytes": 17674,
+      "sha256": "882726c3618388eecba8092645edf2847f9d9c3bff9c58dd2b526205075e2b2b",
+      "review": "full selected file"
+    },
+    {
+      "path": "setup.cfg",
+      "bytes": 867,
+      "sha256": "29a58ab33c3fe6e0c00961616dc3719330a8b5fd0a4cfb585809c024c7403d0a",
+      "review": "full selected file"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 103,
+      "sha256": "4b5f4916dfc7c0e05e65ad70950e2d236857767ee01e21d82ef8e0783cd7315a",
+      "review": "full selected file"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 139,
+      "sha256": "39f4149cf54e41f1d7739402b1b8d025d26648535fa8d556398ca632cf5ede38",
+      "review": "full selected file"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6965,
+      "sha256": "20c4f2027e1866ecdba6bd1a4e5f4c9db1638639c88bd6048dee7d575dccc537",
+      "review": "full selected file"
+    },
+    {
+      "path": "tests/test_scanner.py",
+      "bytes": 40296,
+      "sha256": "e106b4c5c6ee8f5e8c13e6342cb2279496d57f6b3ae67ec115d30da9078a887e",
+      "review": "full selected file"
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "bytes": 2080,
+      "sha256": "b38f2bc5c257bd444242e92705fa688580afa9cf437e15a16ecc5ec95fcdb621",
+      "review": "full selected file"
+    }
+  ],
+  "excluded": "Upstream attack fixture generators, opaque binary fixtures, publish/codeql workflows, transitive dependencies, remote/7z and directory features not executed or copied. Upstream tests contain real unpickle calls and module side effects, so none were run.",
+  "new_source": "Independent symbol-value stack/memo/FRAME/reference analysis, strict ZIP32 and independent NPY literal/dtype parsing; standard-library pickletools opcode decoding only. No import/wrapper of picklescan, torch, NumPy or archive extraction.",
+  "internal_reuse": "53-line safe file reader and engineering package/CI scaffolding adapted from this batch SourceReleaseReview, by the same AI-assisted contributor. No source-release manifest comparison runtime imported.",
+  "license": {
+    "spdx": "MIT",
+    "retained": [
+      "THIRD_PARTY_LICENSES/picklescan-MIT.txt",
+      "THIRD_PARTY_LICENSES/picklescan-NOTICES.txt"
+    ]
+  },
+  "ai_assisted": true,
+  "cvp_eligibility": "OPEN"
+}
