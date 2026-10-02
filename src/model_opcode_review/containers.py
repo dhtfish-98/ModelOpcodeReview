@@ -5,6 +5,7 @@ import re
 import stat
 import struct
 import unicodedata
+import warnings
 import zlib
 from hashlib import sha256
 
@@ -286,7 +287,13 @@ def analyze_npy(data, evidence, member=0):
     if end % 16 or data[end - 1] != 10:
         raise Incomplete("npy_alignment_or_newline")
     text = data[start:end].decode("utf-8" if version == 3 else "latin1", "strict")
-    tree = ast.parse(text.strip(), mode="eval")
+    # Parser warnings can contain fragments of the untrusted literal. Capture
+    # them under any caller filter and expose only a fixed incomplete reason.
+    with warnings.catch_warnings(record=True) as recorded:
+        warnings.simplefilter("always")
+        tree = ast.parse(text.strip(), mode="eval")
+    if recorded:
+        raise Incomplete("npy_compile_warning")
     stack, nodes = [(tree, 1)], 0
     while stack:
         node, depth = stack.pop()

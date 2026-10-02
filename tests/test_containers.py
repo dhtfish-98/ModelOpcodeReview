@@ -2,6 +2,7 @@ import io
 import json
 import stat
 import struct
+import warnings
 import zipfile
 import zlib
 from dataclasses import replace
@@ -113,6 +114,18 @@ def test_npy_shapes(shape):
 )
 def test_header_literal_no_execution(header):
     assert review_bytes(npy(raw_header=header))["status"] == "OPEN"
+
+
+@pytest.mark.parametrize("caller_filter", ("always", "error", "ignore"))
+def test_npy_warning_is_private_and_fixed_open(caller_filter):
+    data = npy(raw_header=r"{'descr':'private\q','fortran_order':False,'shape':(0,)}")
+    with warnings.catch_warnings(record=True) as observed:
+        warnings.simplefilter(caller_filter)
+        report = review_bytes(data)
+    assert not observed
+    assert report["status"] == "OPEN"
+    assert "npy_compile_warning" in codes(report)
+    assert "private" not in json.dumps(report)
 
 
 @pytest.mark.parametrize(

@@ -100,5 +100,212 @@
     ]
   },
   "ai_assisted": true,
-  "cvp_eligibility": "OPEN"
+  "cvp_eligibility": "OPEN",
+  "reaudit_20261003": {
+    "version": "0.1.1",
+    "finding": "NPY AST compiler warnings could reveal an input invalid-escape fragment on stderr. Capture all such warnings and emit fixed npy_compile_warning OPEN; no model-loader or object-execution expansion.",
+    "coverage": "All eight final runtime Python modules read fully, including the changed warning-handling module; all four final test modules, three scripts, packaging/CI configuration, README, scope, origin, validation and full three retained licenses/notices read. Six inert example bytes retained and statically reviewed; no unpickling/model execution. Original selected upstream source review is retained above, not repeated here.",
+    "source_tests": {
+      "python": "3.14.6",
+      "platform": "macOS arm64",
+      "passed": 354,
+      "failures": 0,
+      "skips": 0
+    },
+    "new_boundary_regressions": "Library warning filters always/error/ignore and three fresh subprocess CLI modes default/-Walways/-Werror: fixed OPEN, no stderr or private header text, input bytes/mtime unchanged.",
+    "self_hash": "Excluded from final_files to avoid a self-reference; the external frozen evidence records this file hash.",
+    "final_files": [
+      {
+        "path": ".github/workflows/ci.yml",
+        "bytes": 1570,
+        "sha256": "9d91d52d3ab97663b3a3b9aed72adcf553c3fdfbc014be932dd91061a70d1ae4"
+      },
+      {
+        "path": ".gitignore",
+        "bytes": 162,
+        "sha256": "9dd4f0f68f627d06d2727a528b14fc6b1092d0ca925bfd61548fbbd08e38ed97"
+      },
+      {
+        "path": "DEFENSIVE_SCOPE.md",
+        "bytes": 7635,
+        "sha256": "633b35d0b208feef861eca1be3071bceeecf16af49069e5f7f48ca88d6e03e9d"
+      },
+      {
+        "path": "LICENSE",
+        "bytes": 1097,
+        "sha256": "d89ad774cae52940a8acaeddb0804c676ed27e466390ae54a0dab3beb0e8ac1d"
+      },
+      {
+        "path": "MANIFEST.in",
+        "bytes": 472,
+        "sha256": "230b74ed2d36e6d33b98fdbe9079e4bf0317f2333160c8f388f9c791537b7026"
+      },
+      {
+        "path": "ORIGIN.md",
+        "bytes": 3149,
+        "sha256": "f9a2102d10596d8e3f651d936f87e8cea452ddb677360f09b1bbdc1aa9a8b177"
+      },
+      {
+        "path": "README.md",
+        "bytes": 4427,
+        "sha256": "e13a83d8d8dcfecd728aff385e552bf76f3727ec70be148638a59350b2389850"
+      },
+      {
+        "path": "THIRD_PARTY_LICENSES/picklescan-MIT.txt",
+        "bytes": 1072,
+        "sha256": "1418146b5f7b837d0a7c24906a272f2f6adb68ebb258e97560ec91ae663ff38a"
+      },
+      {
+        "path": "THIRD_PARTY_LICENSES/picklescan-NOTICES.txt",
+        "bytes": 17674,
+        "sha256": "882726c3618388eecba8092645edf2847f9d9c3bff9c58dd2b526205075e2b2b"
+      },
+      {
+        "path": "VALIDATION.md",
+        "bytes": 4654,
+        "sha256": "feb7f5ed41de157f4dcb282dbb4b781a77be39d7e9ca83d1c1f873efc9d28eca"
+      },
+      {
+        "path": "examples/global-declaration.pkl",
+        "bytes": 12,
+        "sha256": "717c61d54589c17c2c4196dcdd551fe4d9c0f0f3c157cf351009122a0c37d00d"
+      },
+      {
+        "path": "examples/object-header.npy",
+        "bytes": 130,
+        "sha256": "08c8e1681d30ed89649e3e55f6e8d7f7729d86acf68e5f36afbeef239ae1b614"
+      },
+      {
+        "path": "examples/primitive.npy",
+        "bytes": 136,
+        "sha256": "26c17c3007b56c83794d22d5e84652ff9b60e957076828bf720e752030f97e5f"
+      },
+      {
+        "path": "examples/primitive.pkl",
+        "bytes": 10,
+        "sha256": "426f4b000e408861dcd3289d8861c70e801e1595835b5cdbd9a9234c56418fe7"
+      },
+      {
+        "path": "examples/primitive.zip",
+        "bytes": 126,
+        "sha256": "5647c2afc8f65df5dbb783950ab860db025e8c8742fe375eff5d35cb20635c9a"
+      },
+      {
+        "path": "examples/truncated.pkl",
+        "bytes": 7,
+        "sha256": "e9644d9d792100345f5b69ef44781b8f96ed10093487ac06f6dee0b247be8206"
+      },
+      {
+        "path": "pyproject.toml",
+        "bytes": 1055,
+        "sha256": "7750cf072760147eb480dce4b4f8eaaa48f924ad8359448f191ee5b523b9eb64"
+      },
+      {
+        "path": "requirements-dev.txt",
+        "bytes": 161,
+        "sha256": "4334ccf5c48ad170c594507ffb8ca35e93ad7b814fa8599659745fee04cef820"
+      },
+      {
+        "path": "scripts/installed_cli_check.py",
+        "bytes": 1710,
+        "sha256": "2a58ebd95e0425d5a4569164cc68e0bfc9e560f4d43b13cae66fe102f3878f81"
+      },
+      {
+        "path": "scripts/installed_smoke.py",
+        "bytes": 2837,
+        "sha256": "85110f2c83947cf9510fdc8879fdc7103ea5f672fa95b06320478d4a5ec03b67"
+      },
+      {
+        "path": "scripts/verify_package.py",
+        "bytes": 6299,
+        "sha256": "8397a97369605ae410d3fe6a990411dc07f620853c19d8f99a165c87f010e005"
+      },
+      {
+        "path": "src/model_opcode_review/__init__.py",
+        "bytes": 217,
+        "sha256": "d747bb39456392d558b1a0cbca25936c7fd7942f46169bfa4dc9ec348795f053"
+      },
+      {
+        "path": "src/model_opcode_review/__main__.py",
+        "bytes": 48,
+        "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+      },
+      {
+        "path": "src/model_opcode_review/cli.py",
+        "bytes": 1224,
+        "sha256": "65bfe0e28cb0fef3c31ddd03f5d6323665b8cf32baff1880c8a71a79c79421ed"
+      },
+      {
+        "path": "src/model_opcode_review/containers.py",
+        "bytes": 13550,
+        "sha256": "e931d24ac8697a67117b653e073db49ea80f393187ea5277bec759e3d3f12504"
+      },
+      {
+        "path": "src/model_opcode_review/contracts.py",
+        "bytes": 3212,
+        "sha256": "0ff12f2f046091099d4459c19f697b285e3c8086d2fde3847db0832db8fa1e5e"
+      },
+      {
+        "path": "src/model_opcode_review/files.py",
+        "bytes": 2079,
+        "sha256": "de8adf4b19093657d2248648995c88e6c141f757c4829d5aaf8c92914e2f3590"
+      },
+      {
+        "path": "src/model_opcode_review/opcodes.py",
+        "bytes": 14139,
+        "sha256": "4fbdbf396f4d650d795247f67025362c4fbf6cfe15ad667cae6b2d5f4714a116"
+      },
+      {
+        "path": "src/model_opcode_review/py.typed",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "src/model_opcode_review/review.py",
+        "bytes": 3722,
+        "sha256": "e8b7c6de258fd1a8ec0231775121e4d1a0faed22d35e47b905746e06deff23eb"
+      },
+      {
+        "path": "tests/test_containers.py",
+        "bytes": 10104,
+        "sha256": "2beca1aa57f197fa5a9c8152c70a2125d710f5577fe27c0904a42eb403c5838c"
+      },
+      {
+        "path": "tests/test_extra_semantics.py",
+        "bytes": 3351,
+        "sha256": "c5e473e49a59dfe56b1b6b87f424b639b08751dbe17ad04231293ce60112dbf7"
+      },
+      {
+        "path": "tests/test_files_cli.py",
+        "bytes": 6418,
+        "sha256": "2934b262affd7aeca124c91700da3db19aaebdb1ffbb80c205db721340b790cb"
+      },
+      {
+        "path": "tests/test_opcodes.py",
+        "bytes": 10373,
+        "sha256": "2da1534bfda7232a458c2963b631a49c03f7157e10f93b2f1d6b13c32d27c835"
+      }
+    ],
+    "remaining_open": [
+      "Actual model/deserialization behavior and binding identity",
+      "Arbitrary opaque entries and unsupported formats",
+      "Dependency full-source review and hard OS isolation",
+      "Remote publication and exact-commit CI until externally observed",
+      "Independent human review, applicant identity and CVP eligibility"
+    ],
+    "fresh_installed_tests": {
+      "passed": 354,
+      "failures": 0,
+      "skips": 0,
+      "offline": true,
+      "runtime_dependencies": 0
+    },
+    "installed_controls": {
+      "cli_cases": 8,
+      "audited_cases": 7,
+      "warning_process_modes": 3,
+      "runtime_files_matched": 9,
+      "prohibited_events_observed": 0
+    }
+  }
 }

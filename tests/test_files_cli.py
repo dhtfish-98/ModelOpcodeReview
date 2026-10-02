@@ -147,6 +147,29 @@ def test_module_cli_and_no_execute(tmp_path):
     assert not result.stderr
 
 
+@pytest.mark.parametrize("flags", ([], ["-Walways"], ["-Werror"]))
+def test_npy_compile_warning_new_process_is_private(tmp_path, flags):
+    header = rb"{'descr':'private\q','fortran_order':False,'shape':(0,)}"
+    header += b" " * ((-10 - len(header) - 1) % 16) + b"\n"
+    data = b"\x93NUMPY\x01\0" + len(header).to_bytes(2, "little") + header
+    path = tmp_path.resolve() / "PRIVATE_WARNING.npy"
+    path.write_bytes(data)
+    before = path.stat().st_mtime_ns
+    result = subprocess.run(
+        [sys.executable, *flags, "-m", "model_opcode_review", str(path)],
+        capture_output=True,
+        text=True,
+        timeout=10,
+        check=False,
+    )
+    assert result.returncode == 2 and not result.stderr
+    report = json.loads(result.stdout)
+    assert report["status"] == "OPEN"
+    assert "npy_compile_warning" in [item["code"] for item in report["findings"]]
+    assert "private" not in result.stdout and "PRIVATE_WARNING" not in result.stdout
+    assert path.read_bytes() == data and path.stat().st_mtime_ns == before
+
+
 def test_runtime_never_target_import_or_execute(monkeypatch):
     import builtins
     import pickle
