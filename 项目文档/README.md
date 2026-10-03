@@ -1,3 +1,5 @@
+> 目录已整理：文档在「项目文档」，构建、缓存与暂存输入在「Build」。从仓库根目录运行 `python3 构建.py --build`；如需使用本文原有源码命令，先运行 `python3 构建.py --stage --ci`，再进入 `Build/源码`。暂存会恢复原输入路径。现有版本和历史验证记录按各自提交理解。
+
 # ModelOpcodeReview
 
 New implementation author and maintainer: dhtfish98. Current package version: 0.1.4.
@@ -32,7 +34,7 @@ ZIP supports single-disk ZIP32 stored/deflate, matching local and central header
 
 Multiple concatenated pickle streams are all parsed until the first incomplete stream, but memo is reset per stream and shared-Unpickler lifetime remains OPEN. Old PyTorch binary storage/tar, compression wrappers, joblib, 7z, remote downloads, framework loading and directories are unsupported. No HTTP, Hugging Face, target-module import, unpickle, Torch/NumPy execution, archive extraction, URL fetching or attack generation is present.
 
-Limits are public immutable values and can only be lowered. See [DEFENSIVE_SCOPE.md](DEFENSIVE_SCOPE.md) for exact supported grammar, semantics and budgets, [ORIGIN.md](ORIGIN.md) for fixed source attribution and retained provenance, and [VALIDATION.md](VALIDATION.md) for measured verification and remaining OPEN claims.
+Limits are public immutable values and can only be lowered. See [DEFENSIVE_SCOPE.md](<DEFENSIVE_SCOPE.md>) for exact supported grammar, semantics and budgets, [ORIGIN.md](<ORIGIN.md>) for fixed source attribution and retained provenance, and [VALIDATION.md](<VALIDATION.md>) for measured verification and remaining OPEN claims.
 
 The bundled examples are inert data, a global declaration without invocation, and deliberate incomplete/mismatched declarations. `object-header.npy` deliberately contains a None pickle rather than an ndarray; it demonstrates OPEN, not a valid executable model or dtype equivalence. No upstream attack fixture is distributed.
 

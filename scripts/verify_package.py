@@ -39,11 +39,11 @@ def verify(wheel, sdist):
         require(
             set(metadata.get_all("License-File", []))
             == {
-                "LICENSE",
+                "项目文档/LICENSE",
             },
             "license-file metadata",
         )
-        for name in ("LICENSE",):
+        for name in ("项目文档/LICENSE",):
             require(package.read(f"{prefix}/licenses/{name}") == (root / name).read_bytes(), name)
         entry = package.read(f"{prefix}/entry_points.txt").decode()
         require("model-opcode-review = model_opcode_review.cli:main" in entry, "entrypoint")
@@ -86,11 +86,11 @@ def verify(wheel, sdist):
         base = members[0].name.split("/", 1)[0]
         names = {member.name for member in members}
         for name in (
-            "LICENSE",
-            "README.md",
-            "ORIGIN.md",
-            "DEFENSIVE_SCOPE.md",
-            "VALIDATION.md",
+            "项目文档/LICENSE",
+            "项目文档/README.md",
+            "项目文档/ORIGIN.md",
+            "项目文档/DEFENSIVE_SCOPE.md",
+            "项目文档/VALIDATION.md",
             "SOURCE_AUDIT.json",
             "requirements-dev.txt",
             ".github/workflows/ci.yml",

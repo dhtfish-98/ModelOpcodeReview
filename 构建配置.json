@@ -1,0 +1,35 @@
+{
+  "schema": "project-build-layout.v1",
+  "project": "ModelOpcodeReview",
+  "author": "dhtfish98",
+  "kind": "python",
+  "base_public_commit": "52079c921cda7f6e7b14afca0dd85b3e9b771819",
+  "restored_inputs": [
+    {
+      "original": "DEFENSIVE_SCOPE.md",
+      "stored": "项目文档/DEFENSIVE_SCOPE.md",
+      "sha256": "8f505de8ff1f3bc6f202c19b696885d44329f08449849bc485b5fa6ba31db894"
+    },
+    {
+      "original": "LICENSE",
+      "stored": "项目文档/LICENSE",
+      "sha256": "c495cf46c88b22e05b0813035ecca8d0e1daebecbce5ea8eb60f2d3d97a0409c"
+    },
+    {
+      "original": "ORIGIN.md",
+      "stored": "项目文档/ORIGIN.md",
+      "sha256": "571a3c9c86ccc31f766b81621268ce24617c4faff25500957be6c3b7e273c2b1"
+    },
+    {
+      "original": "README.md",
+      "stored": "项目文档/README.md",
+      "sha256": "97e8ca9b2d9a77b9f575f1e380838d58a713195703abbded9a74cd6474889d33"
+    },
+    {
+      "original": "VALIDATION.md",
+      "stored": "项目文档/VALIDATION.md",
+      "sha256": "ec24b8202970c4c50cd4615fe466d3bbdf112a2d7b37e13aefe0561349d7e60b"
+    }
+  ],
+  "platform_entries": []
+}
