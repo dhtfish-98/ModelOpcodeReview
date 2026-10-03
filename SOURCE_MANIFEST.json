@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "project": "ModelOpcodeReview",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "dhtfish98",
   "scope": "Current selected implementation and repository files; self manifest excluded to avoid a hash cycle. Upstream source commits remain in ORIGIN/source review records.",
   "files": [
@@ -27,13 +27,13 @@
     },
     {
       "path": "MANIFEST.in",
-      "sha256": "e755c4a74c192174e50b4f5a0d40d33e7f079bf917f7e85181f1b72d5d9ea24f",
-      "bytes": 502
+      "sha256": "110ffabba540c0c77694e71514f7fa2472f15c1cd7a78e3f98755ef25858d345",
+      "bytes": 457
     },
     {
       "path": "ORIGIN.md",
-      "sha256": "84c533f178374a04334bacf62ed141b5aece0cf693f9affec507230eb0ca9882",
-      "bytes": 3083
+      "sha256": "571a3c9c86ccc31f766b81621268ce24617c4faff25500957be6c3b7e273c2b1",
+      "bytes": 3021
     },
     {
       "path": "README.md",
@@ -42,23 +42,13 @@
     },
     {
       "path": "SOURCE_AUDIT.json",
-      "sha256": "f85085a44e1ac177423cad5b06ff517067219e659faf2ae8cda0b7f18a0f266d",
-      "bytes": 12160
-    },
-    {
-      "path": "THIRD_PARTY_LICENSES/picklescan-MIT.txt",
-      "sha256": "1418146b5f7b837d0a7c24906a272f2f6adb68ebb258e97560ec91ae663ff38a",
-      "bytes": 1072
-    },
-    {
-      "path": "THIRD_PARTY_LICENSES/picklescan-NOTICES.txt",
-      "sha256": "882726c3618388eecba8092645edf2847f9d9c3bff9c58dd2b526205075e2b2b",
-      "bytes": 17674
+      "sha256": "5650aaf2740a534bcdfe3e1552c710be08dc565d1f1710214cb9abbb41583568",
+      "bytes": 12499
     },
     {
       "path": "VALIDATION.md",
-      "sha256": "f249311083b9521805fae318b75bec0258b4c0dc9239667d6e359d4ff3b9a47e",
-      "bytes": 6550
+      "sha256": "a274813dd114ddc9604585e613075ec16d88980475bd82cea69a46b9d72b170c",
+      "bytes": 7890
     },
     {
       "path": "examples/global-declaration.pkl",
@@ -92,8 +82,8 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "53a49af549bd11e4da96bb1e57e4cc2ba21ea9e69970d4b2b890b46d771ef7fd",
-      "bytes": 1071
+      "sha256": "e2b782cd4f56b0f37938f11a4ab04d2f30ac16bd295658525ab789e5090ea1d0",
+      "bytes": 981
     },
     {
       "path": "requirements-dev.txt",
@@ -112,12 +102,12 @@
     },
     {
       "path": "scripts/verify_package.py",
-      "sha256": "d79422910b8d63dd6f921b6a6d1e84e4553f0b694becd5aed851f5b869ed84c2",
-      "bytes": 6299
+      "sha256": "79ce37e31e0505d6685dad14fb3398b1844b8a045b7dd40032523756f817ac37",
+      "bytes": 6031
     },
     {
       "path": "src/model_opcode_review/__init__.py",
-      "sha256": "ef4618a9a0268506af60b1b10a64638e88b058f2240fc5ebd80a24803f847eec",
+      "sha256": "42605175dae459ff7a1f336b2500e7e60e7d39b7bfe5485d4de5680a84a78831",
       "bytes": 217
     },
     {
@@ -127,7 +117,7 @@
     },
     {
       "path": "src/model_opcode_review/cli.py",
-      "sha256": "33896e463aae05c2c12ee1f049f9f93c3277577a50e27043e09a3b7fe9ada1d5",
+      "sha256": "da264778f5f157443a8cf00c6888e393fee0e7db51e23e734c7e2692a40f0be3",
       "bytes": 1224
     },
     {
@@ -190,5 +180,6 @@
       "sha256": "2da1534bfda7232a458c2963b631a49c03f7157e10f93b2f1d6b13c32d27c835",
       "bytes": 10373
     }
-  ]
+  ],
+  "license_cleanup": "Only approved reference-only copies removed; applicable data/code/terms and own LICENSE preserved."
 }
