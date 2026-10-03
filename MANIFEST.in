@@ -12,3 +12,5 @@ prune .install-check
 prune .install-final
 prune wheelhouse
 global-exclude __pycache__ *.py[cod]
+
+include SOURCE_MANIFEST.json

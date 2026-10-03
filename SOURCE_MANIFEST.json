@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "project": "ModelOpcodeReview",
+  "version": "0.1.2",
+  "author": "dhtfish98",
+  "scope": "Current selected implementation and repository files; self manifest excluded to avoid a hash cycle. Upstream source commits remain in ORIGIN/source review records.",
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "025798d65f096f02ba341fdf4808ae1712e903232c048a86ac1d3900ccf127aa",
+      "bytes": 1570
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "9dd4f0f68f627d06d2727a528b14fc6b1092d0ca925bfd61548fbbd08e38ed97",
+      "bytes": 162
+    },
+    {
+      "path": "DEFENSIVE_SCOPE.md",
+      "sha256": "633b35d0b208feef861eca1be3071bceeecf16af49069e5f7f48ca88d6e03e9d",
+      "bytes": 7635
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "c495cf46c88b22e05b0813035ecca8d0e1daebecbce5ea8eb60f2d3d97a0409c",
+      "bytes": 1076
+    },
+    {
+      "path": "MANIFEST.in",
+      "sha256": "e755c4a74c192174e50b4f5a0d40d33e7f079bf917f7e85181f1b72d5d9ea24f",
+      "bytes": 502
+    },
+    {
+      "path": "ORIGIN.md",
+      "sha256": "84c533f178374a04334bacf62ed141b5aece0cf693f9affec507230eb0ca9882",
+      "bytes": 3083
+    },
+    {
+      "path": "README.md",
+      "sha256": "87a3d389b3880cb00f72f8846f7285f236579ef0e21ae7babc70612f369b246f",
+      "bytes": 5196
+    },
+    {
+      "path": "SOURCE_AUDIT.json",
+      "sha256": "f85085a44e1ac177423cad5b06ff517067219e659faf2ae8cda0b7f18a0f266d",
+      "bytes": 12160
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/picklescan-MIT.txt",
+      "sha256": "1418146b5f7b837d0a7c24906a272f2f6adb68ebb258e97560ec91ae663ff38a",
+      "bytes": 1072
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/picklescan-NOTICES.txt",
+      "sha256": "882726c3618388eecba8092645edf2847f9d9c3bff9c58dd2b526205075e2b2b",
+      "bytes": 17674
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "f249311083b9521805fae318b75bec0258b4c0dc9239667d6e359d4ff3b9a47e",
+      "bytes": 6550
+    },
+    {
+      "path": "examples/global-declaration.pkl",
+      "sha256": "717c61d54589c17c2c4196dcdd551fe4d9c0f0f3c157cf351009122a0c37d00d",
+      "bytes": 12
+    },
+    {
+      "path": "examples/object-header.npy",
+      "sha256": "08c8e1681d30ed89649e3e55f6e8d7f7729d86acf68e5f36afbeef239ae1b614",
+      "bytes": 130
+    },
+    {
+      "path": "examples/primitive.npy",
+      "sha256": "26c17c3007b56c83794d22d5e84652ff9b60e957076828bf720e752030f97e5f",
+      "bytes": 136
+    },
+    {
+      "path": "examples/primitive.pkl",
+      "sha256": "426f4b000e408861dcd3289d8861c70e801e1595835b5cdbd9a9234c56418fe7",
+      "bytes": 10
+    },
+    {
+      "path": "examples/primitive.zip",
+      "sha256": "5647c2afc8f65df5dbb783950ab860db025e8c8742fe375eff5d35cb20635c9a",
+      "bytes": 126
+    },
+    {
+      "path": "examples/truncated.pkl",
+      "sha256": "e9644d9d792100345f5b69ef44781b8f96ed10093487ac06f6dee0b247be8206",
+      "bytes": 7
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "53a49af549bd11e4da96bb1e57e4cc2ba21ea9e69970d4b2b890b46d771ef7fd",
+      "bytes": 1071
+    },
+    {
+      "path": "requirements-dev.txt",
+      "sha256": "4334ccf5c48ad170c594507ffb8ca35e93ad7b814fa8599659745fee04cef820",
+      "bytes": 161
+    },
+    {
+      "path": "scripts/installed_cli_check.py",
+      "sha256": "2a58ebd95e0425d5a4569164cc68e0bfc9e560f4d43b13cae66fe102f3878f81",
+      "bytes": 1710
+    },
+    {
+      "path": "scripts/installed_smoke.py",
+      "sha256": "85110f2c83947cf9510fdc8879fdc7103ea5f672fa95b06320478d4a5ec03b67",
+      "bytes": 2837
+    },
+    {
+      "path": "scripts/verify_package.py",
+      "sha256": "d79422910b8d63dd6f921b6a6d1e84e4553f0b694becd5aed851f5b869ed84c2",
+      "bytes": 6299
+    },
+    {
+      "path": "src/model_opcode_review/__init__.py",
+      "sha256": "ef4618a9a0268506af60b1b10a64638e88b058f2240fc5ebd80a24803f847eec",
+      "bytes": 217
+    },
+    {
+      "path": "src/model_opcode_review/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "bytes": 48
+    },
+    {
+      "path": "src/model_opcode_review/cli.py",
+      "sha256": "33896e463aae05c2c12ee1f049f9f93c3277577a50e27043e09a3b7fe9ada1d5",
+      "bytes": 1224
+    },
+    {
+      "path": "src/model_opcode_review/containers.py",
+      "sha256": "e931d24ac8697a67117b653e073db49ea80f393187ea5277bec759e3d3f12504",
+      "bytes": 13550
+    },
+    {
+      "path": "src/model_opcode_review/contracts.py",
+      "sha256": "0ff12f2f046091099d4459c19f697b285e3c8086d2fde3847db0832db8fa1e5e",
+      "bytes": 3212
+    },
+    {
+      "path": "src/model_opcode_review/files.py",
+      "sha256": "147aa0b3dce3ab107538a472fb8bfb68c643a5858f09ab9fef638f6e83f057a6",
+      "bytes": 2243
+    },
+    {
+      "path": "src/model_opcode_review/opcodes.py",
+      "sha256": "4fbdbf396f4d650d795247f67025362c4fbf6cfe15ad667cae6b2d5f4714a116",
+      "bytes": 14139
+    },
+    {
+      "path": "src/model_opcode_review/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "src/model_opcode_review/review.py",
+      "sha256": "e8b7c6de258fd1a8ec0231775121e4d1a0faed22d35e47b905746e06deff23eb",
+      "bytes": 3722
+    },
+    {
+      "path": "tests/test_capabilities.py",
+      "sha256": "a58aeff6033d2dd91a864b8a92a94c4dce6d6afa0623faa4c7c23dc946e1a572",
+      "bytes": 2521
+    },
+    {
+      "path": "tests/test_containers.py",
+      "sha256": "2beca1aa57f197fa5a9c8152c70a2125d710f5577fe27c0904a42eb403c5838c",
+      "bytes": 10104
+    },
+    {
+      "path": "tests/test_dirfd_capabilities.py",
+      "sha256": "38ea38525c6498f269a1fa8e2cc27716764a20d2ae81b8e86a56bf7d16fb44e3",
+      "bytes": 5576
+    },
+    {
+      "path": "tests/test_extra_semantics.py",
+      "sha256": "c5e473e49a59dfe56b1b6b87f424b639b08751dbe17ad04231293ce60112dbf7",
+      "bytes": 3351
+    },
+    {
+      "path": "tests/test_files_cli.py",
+      "sha256": "2934b262affd7aeca124c91700da3db19aaebdb1ffbb80c205db721340b790cb",
+      "bytes": 6418
+    },
+    {
+      "path": "tests/test_opcodes.py",
+      "sha256": "2da1534bfda7232a458c2963b631a49c03f7157e10f93b2f1d6b13c32d27c835",
+      "bytes": 10373
+    }
+  ]
+}

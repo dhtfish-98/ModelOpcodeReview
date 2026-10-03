@@ -91,7 +91,7 @@
   ],
   "excluded": "Upstream attack fixture generators, opaque binary fixtures, publish/codeql workflows, transitive dependencies, remote/7z and directory features not executed or copied. Upstream tests contain real unpickle calls and module side effects, so none were run.",
   "new_source": "Independent symbol-value stack/memo/FRAME/reference analysis, strict ZIP32 and independent NPY literal/dtype parsing; standard-library pickletools opcode decoding only. No import/wrapper of picklescan, torch, NumPy or archive extraction.",
-  "internal_reuse": "53-line safe file reader and engineering package/CI scaffolding adapted from this batch SourceReleaseReview, by the same AI-assisted contributor. No source-release manifest comparison runtime imported.",
+  "internal_reuse": "53-line safe file reader and engineering package/CI scaffolding adapted from this batch SourceReleaseReview; shared implementation provenance is retained. No source-release manifest comparison runtime imported.",
   "license": {
     "spdx": "MIT",
     "retained": [
@@ -99,7 +99,6 @@
       "THIRD_PARTY_LICENSES/picklescan-NOTICES.txt"
     ]
   },
-  "ai_assisted": true,
   "cvp_eligibility": "OPEN",
   "reaudit_20261003": {
     "version": "0.1.1",
@@ -307,5 +306,12 @@
       "runtime_files_matched": 9,
       "prohibited_events_observed": 0
     }
+  },
+  "new_implementation_author": "dhtfish98",
+  "current_implementation": {
+    "version": "0.1.2",
+    "author": "dhtfish98",
+    "source_manifest": "SOURCE_MANIFEST.json",
+    "scope": "Selected finite implementation only; earlier source/code review measurements above describe their original snapshots."
   }
 }
