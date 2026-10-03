@@ -1,3 +1,13 @@
+# Current delivery validation — 0.1.4
+
+New implementation author and maintainer: dhtfish98. Protocol0 pickle decoder warnings are captured under an internal always filter and yield the fixed `pickle_decode_warning` OPEN diagnostic, without warning text or input/path fragments. Existing known FAIL findings retain priority. Decoding remains static; no object loaders, imports or target execution are introduced.
+
+The current source suite passes 389 tests on Python 3.14/macOS: 357 existing cases plus 32 warning and normal-input API/CLI controls across caller always/default/ignore/error filters, including known FAIL and malformed continuation controls. Fresh wheel and source-archive consumers must pass the complete same suite before local delivery is accepted. Exact source, artifact, installed-origin, RECORD and retained-notice evidence is recorded separately.
+
+This version has no matching published commit or hosted CI result at local preparation. Those gates, target deserialization safety, applicant identity/authorization and CVP admission remain OPEN. Historical native/oracle results below are not new measurements for this patch.
+
+## Historical previous delivery evidence
+
 ## Current version 0.1.3: applicable material notices, 2026-10-03
 
 New implementation author and maintainer: dhtfish98. Package version: `0.1.3`.

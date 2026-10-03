@@ -1,6 +1,6 @@
 # ModelOpcodeReview
 
-New implementation author and maintainer: dhtfish98.
+New implementation author and maintainer: dhtfish98. Current package version: 0.1.4.
 
 Review one local pickle, ZIP model container or NPY/NPZ file without loading a model. The independent implementation follows actual symbolic stack, mark, memo and object identities, validates FRAME boundaries, and records potential global/call/state-hook references. It also checks a strict ZIP32 profile and bounded NPY header/dtype/shape syntax. Python 3.11+; no runtime dependencies.
 
@@ -43,3 +43,5 @@ weakening the boundary. Native
 Windows file I/O is not verified; the current verification is macOS POSIX.
 
 Directory descriptor capability contract: `os.supports_dir_fd` must be a set or frozenset containing `os.open` before requested local file access. Missing, malformed or incomplete capability declarations return the existing controlled OPEN/error result. This finite POSIX contract is checked locally; native Windows file operations are not implemented or claimed.
+
+Protocol0 operand decoder warnings return a fixed `pickle_decode_warning` OPEN result with empty stderr, regardless of caller warning filters. Existing known FAIL findings retain priority.

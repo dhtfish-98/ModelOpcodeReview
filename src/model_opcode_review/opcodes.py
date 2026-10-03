@@ -1,6 +1,7 @@
 """Static symbolic pickle machine. Values are identities, never target objects."""
 
 import pickletools
+import warnings
 from dataclasses import dataclass, field
 from hashlib import sha256
 from io import BytesIO
@@ -326,10 +327,31 @@ def analyze_pickle(data, evidence, member=0, base=0):
         current = source
         stopped = False
         try:
-            for opcode, arg, position in pickletools.genops(current):
-                stopped = machine.step(opcode, arg, position - start, current.tell() - start)
-                if machine.frame_end is not None and machine.frame_end > len(data) - start:
-                    raise Incomplete("truncated_frame")
+            with warnings.catch_warnings(record=True) as decoded_warnings:
+                warnings.simplefilter("always")
+                try:
+                    for opcode, arg, position in pickletools.genops(current):
+                        if decoded_warnings:
+                            decoded_warnings.clear()
+                            evidence.emit(
+                                "pickle_decode_warning",
+                                member=member,
+                                stream=stream_count,
+                                offset=base + position,
+                            )
+                        stopped = machine.step(
+                            opcode, arg, position - start, current.tell() - start
+                        )
+                        if machine.frame_end is not None and machine.frame_end > len(data) - start:
+                            raise Incomplete("truncated_frame")
+                finally:
+                    if decoded_warnings:
+                        evidence.emit(
+                            "pickle_decode_warning",
+                            member=member,
+                            stream=stream_count,
+                            offset=base + current.tell(),
+                        )
             if not stopped:
                 raise Incomplete("missing_stop")
         except Incomplete as exc:

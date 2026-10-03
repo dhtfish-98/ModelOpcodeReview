@@ -15,7 +15,7 @@ def main(argv=None):
     parser = Parser(description="Bounded offline pickle/ZIP/NPY static review; never deserialize")
     parser.add_argument("path")
     parser.add_argument("--format", choices=("auto", "pickle", "zip", "npy"), default="auto")
-    parser.add_argument("--version", action="version", version="ModelOpcodeReview 0.1.3")
+    parser.add_argument("--version", action="version", version="ModelOpcodeReview 0.1.4")
     try:
         args = parser.parse_args(argv)
         report = review_file(args.path, format=args.format)
