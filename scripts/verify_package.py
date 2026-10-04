@@ -91,7 +91,7 @@ def verify(wheel, sdist):
             "项目文档/ORIGIN.md",
             "项目文档/DEFENSIVE_SCOPE.md",
             "项目文档/VALIDATION.md",
-            "SOURCE_AUDIT.json",
+            "项目文档/SOURCE_AUDIT.json",
             "requirements-dev.txt",
             ".github/workflows/ci.yml",
             "scripts/verify_package.py",

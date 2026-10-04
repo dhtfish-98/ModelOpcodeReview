@@ -26,6 +26,11 @@
       "sha256": "97e8ca9b2d9a77b9f575f1e380838d58a713195703abbded9a74cd6474889d33"
     },
     {
+      "original": "SOURCE_AUDIT.json",
+      "stored": "项目文档/SOURCE_AUDIT.json",
+      "sha256": "5650aaf2740a534bcdfe3e1552c710be08dc565d1f1710214cb9abbb41583568"
+    },
+    {
       "original": "VALIDATION.md",
       "stored": "项目文档/VALIDATION.md",
       "sha256": "ec24b8202970c4c50cd4615fe466d3bbdf112a2d7b37e13aefe0561349d7e60b"

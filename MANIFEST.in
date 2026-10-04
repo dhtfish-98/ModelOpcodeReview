@@ -1,4 +1,4 @@
-include 项目文档/README.md 项目文档/ORIGIN.md 项目文档/DEFENSIVE_SCOPE.md 项目文档/VALIDATION.md SOURCE_AUDIT.json requirements-dev.txt
+include 项目文档/README.md 项目文档/ORIGIN.md 项目文档/DEFENSIVE_SCOPE.md 项目文档/VALIDATION.md 项目文档/SOURCE_AUDIT.json requirements-dev.txt
 recursive-include src *.py py.typed
 recursive-include tests *.py
 recursive-include scripts *.py

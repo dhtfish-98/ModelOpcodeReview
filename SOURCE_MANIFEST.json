@@ -17,13 +17,8 @@
     },
     {
       "path": "MANIFEST.in",
-      "sha256": "5bf357b513c3ca953f8937773e3082cf058a6d1ec1dd093bcd4935abec765055",
-      "bytes": 985
-    },
-    {
-      "path": "SOURCE_AUDIT.json",
-      "sha256": "5650aaf2740a534bcdfe3e1552c710be08dc565d1f1710214cb9abbb41583568",
-      "bytes": 12499
+      "sha256": "3d33764fddc20adcfc9197c1a87b53328e1d478a464f94272ccc3ccf6056be3f",
+      "bytes": 998
     },
     {
       "path": "examples/global-declaration.pkl",
@@ -77,8 +72,8 @@
     },
     {
       "path": "scripts/verify_package.py",
-      "sha256": "66f37e52bab7c296aeae4218fc4a18eba4950e73f5758d25e5d40a72501929eb",
-      "bytes": 6122
+      "sha256": "43c7d8e3ab9fe956a216614803f4830a22e7cd553c7c71f27e94d300efb978f7",
+      "bytes": 6135
     },
     {
       "path": "src/model_opcode_review/__init__.py",
@@ -166,8 +161,8 @@
       "path": "构建.py"
     },
     {
-      "sha256": "37f103ec1ac9896d4d48e2853c25e55892b56585b6fe742f4177fa0b2ed54bdb",
-      "bytes": 1109,
+      "sha256": "66051e7d43af2a1a9eaac3040e0517e0462f7ca02b2bd5bed8b60f2de0959bde",
+      "bytes": 1294,
       "path": "构建配置.json"
     },
     {
@@ -189,6 +184,11 @@
       "path": "项目文档/README.md",
       "sha256": "97e8ca9b2d9a77b9f575f1e380838d58a713195703abbded9a74cd6474889d33",
       "bytes": 5779
+    },
+    {
+      "path": "项目文档/SOURCE_AUDIT.json",
+      "sha256": "5650aaf2740a534bcdfe3e1552c710be08dc565d1f1710214cb9abbb41583568",
+      "bytes": 12499
     },
     {
       "path": "项目文档/VALIDATION.md",
