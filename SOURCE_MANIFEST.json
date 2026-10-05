@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "project": "ModelOpcodeReview",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "dhtfish98",
   "scope": "Current selected implementation and repository files; self manifest excluded to avoid a hash cycle. Upstream source commits remain in ORIGIN/source review records.",
   "files": [
     {
       "path": ".github/workflows/ci.yml",
-      "sha256": "fbe7db329963dd692b180ae35e3b7effa6e0a09997725fb3c95163d2569114e1",
+      "sha256": "8b02f682ea51f2815cfa7a557632214d89f79ed117c957f57216c3a6459a30e6",
       "bytes": 2891
     },
     {
@@ -52,7 +52,7 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "5574214f1e653dd36dc599cb9229c53597339498b9fc3d707d355db7971696ba",
+      "sha256": "a88e689d4a7b542bc04c14ee345d75cc04a1884dab51b8fe5c5d43dda13509d5",
       "bytes": 1007
     },
     {
@@ -77,7 +77,7 @@
     },
     {
       "path": "src/model_opcode_review/__init__.py",
-      "sha256": "c7b5f9895905940e51a29281876d80f19e9c497cf18979462c4539d583efeaa6",
+      "sha256": "29bd2ec381eba6e9b27510fcc36b3ec91ec451951f18043a1ad219101cd10319",
       "bytes": 217
     },
     {
@@ -87,7 +87,7 @@
     },
     {
       "path": "src/model_opcode_review/cli.py",
-      "sha256": "74f1312f823cab1edf491a9a21f2c0ad8029f34ba4961a79598b40d34a26a186",
+      "sha256": "7570018bdfd9ff004b17196698469fb12de7654f6fde58d16bcf1d70fe47755a",
       "bytes": 1224
     },
     {
@@ -161,7 +161,7 @@
       "path": "构建.py"
     },
     {
-      "sha256": "66051e7d43af2a1a9eaac3040e0517e0462f7ca02b2bd5bed8b60f2de0959bde",
+      "sha256": "76a5b7754e8285efdac5149028d5010c90e74c0cf4d3502f97e348a991719c5d",
       "bytes": 1294,
       "path": "构建配置.json"
     },
@@ -182,7 +182,7 @@
     },
     {
       "path": "项目文档/README.md",
-      "sha256": "97e8ca9b2d9a77b9f575f1e380838d58a713195703abbded9a74cd6474889d33",
+      "sha256": "19038380d3fad06f1046718755838966ba786db2755d0ebbc2248385013be955",
       "bytes": 5779
     },
     {
@@ -192,8 +192,8 @@
     },
     {
       "path": "项目文档/VALIDATION.md",
-      "sha256": "ec24b8202970c4c50cd4615fe466d3bbdf112a2d7b37e13aefe0561349d7e60b",
-      "bytes": 9079
+      "sha256": "339b3532ce34f81bb35c1714bfc06bee5d4282523a7a1de8d1555199c8a7673a",
+      "bytes": 9784
     },
     {
       "sha256": "422745cb091f91b7ad00aa0296b8164797f5ecf984832237d035c2b22e401f88",
@@ -212,6 +212,6 @@
     "original_inventory": "项目文档/历史/目录更新20261003/SOURCE_MANIFEST.json.public-52079c921cda.json",
     "original_inventory_sha256": "422745cb091f91b7ad00aa0296b8164797f5ecf984832237d035c2b22e401f88",
     "path_view": "Canonical repository paths; the builder also restores byte-identical legacy aliases under ignored Build for existing packaging checks",
-    "scope": "Current file inventory and packaging paths only; runtime bytes/version/API unchanged. Historical validation and security conclusions are retained, not rerun or newly certified."
+    "scope": "Historical directory-layout migration record; current release advances package version and retains runtime behavior. Historical security conclusions are not newly certified."
   }
 }

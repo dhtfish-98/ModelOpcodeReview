@@ -1,4 +1,12 @@
-# Current delivery validation — 0.1.4
+# Current release validation — 0.1.5, 2026-10-05
+
+This patch publishes the already public Build/项目文档 layout with matching package and CLI versions. Static analysis behavior is unchanged from public main 5a14ca4b22af095fb379ec13cfb2400a6b7dcc5c; only version metadata advances. New implementation author and maintainer: dhtfish98. The project MIT license and recorded source provenance remain intact.
+
+The current source inventory is SOURCE_MANIFEST.json. Exact local tests, installed wheel consumer, package contents, remote CI, tag and release require separate version-bound verification. No target model is loaded, and CVP eligibility or approval remains OPEN.
+
+## Historical delivery evidence
+
+# Prior delivery validation — 0.1.4
 
 New implementation author and maintainer: dhtfish98. Protocol0 pickle decoder warnings are captured under an internal always filter and yield the fixed `pickle_decode_warning` OPEN diagnostic, without warning text or input/path fragments. Existing known FAIL findings retain priority. Decoding remains static; no object loaders, imports or target execution are introduced.
 

@@ -2,7 +2,7 @@
 
 # ModelOpcodeReview
 
-New implementation author and maintainer: dhtfish98. Current package version: 0.1.4.
+New implementation author and maintainer: dhtfish98. Current package version: 0.1.5.
 
 Review one local pickle, ZIP model container or NPY/NPZ file without loading a model. The independent implementation follows actual symbolic stack, mark, memo and object identities, validates FRAME boundaries, and records potential global/call/state-hook references. It also checks a strict ZIP32 profile and bounded NPY header/dtype/shape syntax. Python 3.11+; no runtime dependencies.
 
